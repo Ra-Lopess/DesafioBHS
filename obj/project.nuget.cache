@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "if+nGvYswHqDUraiOOAe6wygjTk9VKjqH09xPlngswVHDB5r4EeBGelktYDvGOmOVIfQNYxswBP7zp0MqemMOQ==",
+  "dgSpecHash": "KBB4DFcy604l5xPS4EMjkuPRazkpqXg/nPGHBOvSrEnwfSkzjIOgyFIpooNun1c1ao/sSDbbEPCRm0HSMhFuQQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\raiss\\source\\repos\\ToBuy\\ToBuy\\ToBuy.csproj",
+  "projectFilePath": "C:\\Users\\raiss\\source\\repos\\ToBuy\\DesafioBHS\\ToBuy.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\raiss\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\raiss\\.nuget\\packages\\jw.pager\\1.0.1\\jw.pager.1.0.1.nupkg.sha512",

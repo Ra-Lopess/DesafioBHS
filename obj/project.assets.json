@@ -5913,11 +5913,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\raiss\\source\\repos\\ToBuy\\ToBuy\\ToBuy.csproj",
+      "projectUniqueName": "C:\\Users\\raiss\\source\\repos\\ToBuy\\DesafioBHS\\ToBuy.csproj",
       "projectName": "ToBuy",
-      "projectPath": "c:\\Users\\raiss\\source\\repos\\ToBuy\\ToBuy\\ToBuy.csproj",
+      "projectPath": "C:\\Users\\raiss\\source\\repos\\ToBuy\\DesafioBHS\\ToBuy.csproj",
       "packagesPath": "C:\\Users\\raiss\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\raiss\\source\\repos\\ToBuy\\ToBuy\\obj\\",
+      "outputPath": "C:\\Users\\raiss\\source\\repos\\ToBuy\\DesafioBHS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

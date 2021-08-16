@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\raiss\\source\\repos\\ToBuy\\ToBuy\\ToBuy.csproj",
+  "FilePath": "c:\\Users\\raiss\\source\\repos\\ToBuy\\DesafioBHS\\ToBuy.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15619,58 +15619,58 @@
   "RootNamespace": "ToBuy",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\raiss\\source\\repos\\ToBuy\\ToBuy\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\raiss\\source\\repos\\ToBuy\\ToBuy\\Views\\Pedido\\PedidoAdd.cshtml",
-      "TargetPath": "Views\\Pedido\\PedidoAdd.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\raiss\\source\\repos\\ToBuy\\ToBuy\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\raiss\\source\\repos\\ToBuy\\ToBuy\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\raiss\\source\\repos\\ToBuy\\ToBuy\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\raiss\\source\\repos\\ToBuy\\ToBuy\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\raiss\\source\\repos\\ToBuy\\ToBuy\\Views\\Pedido\\PedidoFilter.cshtml",
+      "FilePath": "c:\\Users\\raiss\\source\\repos\\ToBuy\\DesafioBHS\\Views\\Pedido\\PedidoFilter.cshtml",
       "TargetPath": "Views\\Pedido\\PedidoFilter.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\raiss\\source\\repos\\ToBuy\\ToBuy\\Views\\Pedido\\Pedido.cshtml",
-      "TargetPath": "Views\\Pedido\\Pedido.cshtml",
+      "FilePath": "c:\\Users\\raiss\\source\\repos\\ToBuy\\DesafioBHS\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\raiss\\source\\repos\\ToBuy\\ToBuy\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\Users\\raiss\\source\\repos\\ToBuy\\DesafioBHS\\Views\\Pedido\\PedidoSearch.cshtml",
+      "TargetPath": "Views\\Pedido\\PedidoSearch.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\raiss\\source\\repos\\ToBuy\\DesafioBHS\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\raiss\\source\\repos\\ToBuy\\ToBuy\\Views\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\raiss\\source\\repos\\ToBuy\\DesafioBHS\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\raiss\\source\\repos\\ToBuy\\ToBuy\\Views\\Pedido\\PedidoSearch.cshtml",
-      "TargetPath": "Views\\Pedido\\PedidoSearch.cshtml",
+      "FilePath": "c:\\Users\\raiss\\source\\repos\\ToBuy\\DesafioBHS\\Views\\Pedido\\Pedido.cshtml",
+      "TargetPath": "Views\\Pedido\\Pedido.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\raiss\\source\\repos\\ToBuy\\DesafioBHS\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\raiss\\source\\repos\\ToBuy\\DesafioBHS\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\raiss\\source\\repos\\ToBuy\\DesafioBHS\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\raiss\\source\\repos\\ToBuy\\DesafioBHS\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\raiss\\source\\repos\\ToBuy\\DesafioBHS\\Views\\Pedido\\PedidoAdd.cshtml",
+      "TargetPath": "Views\\Pedido\\PedidoAdd.cshtml",
       "FileKind": "mvc"
     }
   ],
