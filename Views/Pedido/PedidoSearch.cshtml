@@ -1,0 +1,67 @@
+@model List<Pedido>
+@{
+    ViewData["Title"] = "Pedidos";
+}
+
+<div class="container">
+
+    <div class="row">
+
+        @foreach (var viewModel in @Model)
+        {
+            <div class="col-lg-4">
+                <div class="card card-margin">
+                    <div class="card-header no-border">
+                        <h5 class="card-title">Pedido @viewModel.Codigo</h5>
+                    </div>
+                    <div class="card-body pt-0">
+                        <div class="widget-49">
+                            <div class="widget-49-title-wrapper">
+                                <div class="widget-49-date-primary">
+                                    @if (@viewModel.Status == "A")
+                                    {
+                                        <i class="fas fa-shopping-cart fa-2x text-success"></i>
+                                    }
+                                    else
+                                    {
+                                        <i class="fas fa-shopping-cart fa-2x text-danger"></i>
+                                    }
+                                </div>
+                                <div class="widget-49-meeting-info">
+                                    <span class="widget-49-pro-title">@viewModel.Descricao</span>
+                                    <span class="widget-49-meeting-time">@viewModel.Datapedido</span>
+                                </div>
+                            </div>
+                            <ol class="widget-49-meeting-points">
+                                @foreach (var itens in @viewModel.Itens)
+                                {
+                                    <li class="widget-49-meeting-item"><span>@itens.Descricao</span></li>
+                                }
+
+                            </ol>
+                            <hr>
+                            <div class="row widget-49-meeting-action">
+                                <a class="widget-49-meeting-item ml-auto pr-4">@viewModel.Valorpedido</a>
+                            </div>
+                            <div class="widget-49-meeting-action">
+                                @if (@viewModel.Status == "A")
+                                {
+                                    <a asp-action="PedidoRemove" asp-route-codigo="@viewModel.Codigo" asp-controller="Pedido"
+                                class="btn btn-sm btn-flash-border-primary text-danger">Remover</a>
+                                }
+                                else
+                                {
+                                    <a asp-action="PedidoRestore" asp-route-codigo="@viewModel.Codigo" asp-controller="Pedido"
+                                class="btn btn-sm btn-flash-border-primary text-success">Restaurar</a>
+                                }
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>

@@ -1,0 +1,99 @@
+@model Paginacao<ToBuy.Models.Pedido>
+@{
+    ViewData["Title"] = "Pedidos";
+}
+<div class="container">
+    <form id="form" asp-action="PedidoSearch" asp-controller="Pedido">
+        <div class="input-group mb-4 border rounded-pill p-1">
+            <input name="search" type="search" placeholder="O que você deseja buscar?" aria-describedby="button-addon3"
+                class="form-control bg-none border-0">
+            <div class="input-group-append border-0">
+                <button id="button-addon3" type="submit" class="btn btn-link text-success"><i
+                        class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </form>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Filtro
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item " asp-action="PedidoFilter" asp-controller="Pedido" asp-route-filter="1">Últimas Adições</a>
+            <a class="dropdown-item " asp-action="PedidoFilter" asp-controller="Pedido" asp-route-filter="2">Primeiras Adições</a>
+            <a class="dropdown-item " asp-action="PedidoFilter" asp-controller="Pedido" asp-route-filter="3">Ativos</a>
+            <a class="dropdown-item " asp-action="PedidoFilter" asp-controller="Pedido" asp-route-filter="4">Desativos</a>
+        </div>
+    </div>
+
+    <div class="row">
+
+        @foreach (var viewModel in @Model)
+        {
+            <div class="col-lg-4">
+                <div class="card card-margin">
+                    <div class="card-header no-border">
+                        <h5 class="card-title">Pedido @viewModel.Codigo</h5>
+                    </div>
+                    <div class="card-body pt-0">
+                        <div class="widget-49">
+                            <div class="widget-49-title-wrapper">
+                                <div class="widget-49-date-primary">
+                                    @if (@viewModel.Status == "A")
+                                    {
+                                        <i class="fas fa-shopping-cart fa-2x text-success"></i>
+                                    }
+                                    else
+                                    {
+                                        <i class="fas fa-shopping-cart fa-2x text-danger"></i>
+                                    }
+                                </div>
+                                <div class="widget-49-meeting-info">
+                                    <span class="widget-49-pro-title">@viewModel.Descricao</span>
+                                    <span class="widget-49-meeting-time">@viewModel.Datapedido</span>
+                                </div>
+                            </div>
+                            <ol class="widget-49-meeting-points">
+                                @foreach (var itens in @viewModel.Itens)
+                                {
+                                    <li class="widget-49-meeting-item"><span>@itens.Descricao</span></li>
+                                }
+
+                            </ol>
+                            <hr>
+                            <div class="row widget-49-meeting-action">
+                                <a class="widget-49-meeting-item ml-auto pr-4">R$ @viewModel.Valorpedido</a>
+                            </div>
+                            <div class="widget-49-meeting-action">
+                                @if (@viewModel.Status == "A")
+                                {
+                                    <a asp-action="PedidoRemove" asp-route-codigo="@viewModel.Codigo" asp-controller="Pedido"
+                                class="btn btn-sm btn-flash-border-primary text-danger">Remover</a>
+                                }
+                                else
+                                {
+                                    <a asp-action="PedidoRestore" asp-route-codigo="@viewModel.Codigo" asp-controller="Pedido"
+                                class="btn btn-sm btn-flash-border-primary text-success">Restaurar</a>
+                                }
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+
+    </div>
+    <div class="row">
+
+        @{
+            var prevDisabled = !Model.PreviousPage ? "disabled" : "";
+            var nextDisabled = !Model.NextPage ? "disabled" : "";
+        }
+        <a asp-action="Pedido" asp-route-pageNumber="@(Model.PageIndex - 1)" class="btn btn-default @prevDisabled">
+            < Pagina anterior </a>
+                <a asp-action="Pedido" asp-route-pageNumber="@(Model.PageIndex + 1)"
+                    class="btn btn-default @nextDisabled ml-auto">Próxima página ></a>
+    </div>
+</div>

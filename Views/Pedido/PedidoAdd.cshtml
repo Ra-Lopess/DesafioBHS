@@ -1,0 +1,46 @@
+@model Pedido
+@{
+    ViewData["Title"] = "Adicionar Pedido";
+}
+
+<div class="row header">
+    <div class="col-md-12">
+        <h3>Adicionar Pedido</h3>
+        <hr>
+    </div>
+</div>
+<div class="row form-wrapper">
+    <div class="col-md-12">
+        <form id="form" class="form-horizontal" asp-action="PedidoAdd" asp-controller="Pedido" method="POST">
+            <input type="hidden" class="form-control" asp-for="@Model.Codigo">
+            <div class="form-group">
+                <div class="col-md-8">
+                    <h5 class="col-md-6 control-label">Descrição:</h5>
+                    <input placeholder="Adicione uma descrição para seu pedido" type="text" class="form-control"
+                        asp-for="@Model.Descricao">
+
+                    <br>
+                    
+                    <h5 class="col-md-6 control-label">Itens:</h5>
+                    <div class="row">
+
+                    <select class="form-select" required>
+                        <option selected disabled value="">Selecione os itens</option>
+                        <option value="jweb">Sem itens disponíveis no momento!</option>
+                    </select>
+                    <div class="alert alert-warning ml-auto" role="alert">
+                        <i class="fas fa-wrench"></i> Ainda estamos trabalhando na adição de Itens!
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-8">
+                    <button class="btn btn-success " type="submit">Save</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
